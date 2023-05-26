@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alunos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="menu">
+		<fieldset>
+			<legend>Menu</legend>
+			<p>1 - Inserir</p>
+			<p>2 - Mostrar Todos</p>
+			<p>3 - Buscar</p>
+			<p><input type="number" id="op" autofocus><button onclick="menu(op.value)">OK</button></p>
+		</fieldset>
+	</div>
+
+	<div id="inserir" class="hidden">
+		<fieldset>
+			<legend>Cadastrar Aluno</legend>
+				<p><label>Nome completo:</label><input type="text" id="nome"></p>
+				<p><label>CPF:</label><input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+				<p><label>Sexo:</p>
+  				<input type="radio" id="masc" name="sex" value="masc">
+  				<label for="masc">Masculino</label><br>
+  				<input type="radio" id="fem" name="sex" value="fem">
+  				<label for="fem">Feminino</label>
+				<p><label>Nascimento:</label><input type="date" id="nascimento" max="2023-03-27"></p>
+				<p><label>Nota 1:</label><input type="text" id="nota1"></p>
+				<p><label>Nota 2:</label><input type="text" id="nota2"></p>
+				<p><button onclick="salvar()">Salvar</button></p>
+		</fieldset>
+		
+	</div>
+
+	<div id="mostrar" class="hidden">
+		<fieldset>
+			<legend>Lista de alunos</legend>
+			<div id="listar"></div>
+			<button onclick="voltar()">Voltar</button>
+		</fieldset>
+	</div>
+
+	<div id="buscar" class="hidden">
+		<fieldset>
+			<legend>Buscar</legend>
+			<p>CPF: <input type="number" id="busca"> 
+				<button onclick="buscar(busca.value)">Buscar</button></p>
+			<div id="lista_busca"></div>
+			<button onclick="voltar()">Voltar</button>
+		</fieldset>
+	</div>
+	<script type="text/javascript" src="banco.js"></script>
+	<script type="text/javascript" src="estudante.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
