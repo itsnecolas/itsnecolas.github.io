@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+        <title>E-Coletando</title>
+   </head>
+   
+   <body>
+        <section>
+        
+            <header>
+                <a href="#"><img src="Imagens/logo.png" alt="logo" class="logo"></a>
+                <nav class="navegation">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="Index.html" class="nav-link"><b>Inicio</b></a></li>
+                        <li class="nav-item"><a href="Reciclagem.html"  class="nav-link"><b>Reciclagem</b></a></li>
+                        <li class="nav-item"><a href="Ecopontos.html"  class="nav-link"><b>Ecopontos</b></a></li>
+                        <li class="nav-item"><a href="Impactos.html"  class="nav-link"><b>Impacto</b></a></li>
+                    </ul>
+                    <div class="hamburguer">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="home">
+
+            <div class="container">
+                <div class="text">
+                    <h2><span>Re:Eletrônicos<br></span> <span id="batata"> Descarte consciente.</span></h2>
+                    <P>Já parou para pensar sobre o que fazer com aquele antigo celular ou a velha televisão que não funciona mais? Acredite, jogá-los no lixo comum não é uma boa ideia. O descarte inadequado de lixo eletrônico pode ser prejudicial ao meio ambiente e à saúde. Mas não se preocupe, estamos aqui para te ajudar! Neste espaço especial, vamos te mostrar o caminho certo para se livrar desses equipamentos de áudio e vídeo, de forma fácil e consciente. Vamos embarcar juntos nessa jornada rumo a um futuro mais sustentável! Descubra agora como dar o destino correto para seus eletrônicos. <strong>Não esqueça de clicar nas imagens :) </strong></P>
+                </div>
+            </div>
+
+            <ul class="icons">
+                <li><a href="#"><img src="Imagens/facebook-16.png" alt="icons"></a></li>
+                <li><a href="#"><img src="Imagens/instagram-16.png" alt="icons"></a></li>
+                <li><a href="#"><img src="Imagens/twitter-16.png" alt="icons"></a></li>
+            </ul>
+        </div>
+        <div id="slider">
+          <input type="radio" name="slider" id="slide1" checked>
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
+          <div id="slides">
+             <div id="overflow">
+                <div class="inner">
+                   <div class="slide slide_1">
+                      <div class="slide-content">
+                         <img src="./Imagens/baterias.png" hrf="#"  onclick="toggle()">
+                      </div>
+                   </div>
+                   <div class="slide slide_2">
+                      <div class="slide-content">
+                        <img src="./Imagens/geladeiras.png" hrf="#"  onclick="toggle1()">
+                      </div>
+                   </div>
+                   <div class="slide slide_3">
+                      <div class="slide-content">
+                        <img src="./Imagens/processador.png" hrf="#"  onclick="toggle2()">
+                      </div>
+                   </div>
+                   <div class="slide slide_4">
+                      <div class="slide-content">
+                        <img src="./Imagens/monitores.png" hrf="#"  onclick="toggle3()">
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div id="controls">
+             <label for="slide1"></label>
+             <label for="slide2"></label>
+             <label for="slide3"></label>
+             <label for="slide4"></label>
+          </div>
+          <div id="bullets">
+             <label for="slide1"></label>
+             <label for="slide2"></label>
+             <label for="slide3"></label>
+             <label for="slide4"></label>
+          </div>
+       </div>
+
+       <div id="popup">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <p> Nullam sit amet nisi diam. Nulla vel felis ut felis dignissim tempor sed at neque. Sed sed odio quis nibh luctus interdum sed sit amet purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin urna nunc, sagittis id pretium id, ullamcorper quis urna. Phasellus tincidunt ut tortor ac egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at interdum felis. In et rhoncus nisi. Mauris vulputate vulputate tincidunt. Praesent interdum leo nec interdum porta.</p>
+        <a href="#" onclick="toggle()">Fechar</a>
+    </div>
+
+    <div id="popup1">
+      <h2>1Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      <p> Nullam sit amet nisi diam. Nulla vel felis ut felis dignissim tempor sed at neque. Sed sed odio quis nibh luctus interdum sed sit amet purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin urna nunc, sagittis id pretium id, ullamcorper quis urna. Phasellus tincidunt ut tortor ac egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at interdum felis. In et rhoncus nisi. Mauris vulputate vulputate tincidunt. Praesent interdum leo nec interdum porta.</p>
+      <a href="#" onclick="toggle1()">Fechar</a>
+  </div>
+
+  <div id="popup2">
+   <h2>2Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+   <p> Nullam sit amet nisi diam. Nulla vel felis ut felis dignissim tempor sed at neque. Sed sed odio quis nibh luctus interdum sed sit amet purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin urna nunc, sagittis id pretium id, ullamcorper quis urna. Phasellus tincidunt ut tortor ac egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at interdum felis. In et rhoncus nisi. Mauris vulputate vulputate tincidunt. Praesent interdum leo nec interdum porta.</p>
+   <a href="#" onclick="toggle2()">Fechar</a>
+</div>
+
+
+<div id="popup3">
+   <h2>3Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+   <p> Nullam sit amet nisi diam. Nulla vel felis ut felis dignissim tempor sed at neque. Sed sed odio quis nibh luctus interdum sed sit amet purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin urna nunc, sagittis id pretium id, ullamcorper quis urna. Phasellus tincidunt ut tortor ac egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at interdum felis. In et rhoncus nisi. Mauris vulputate vulputate tincidunt. Praesent interdum leo nec interdum porta.</p>
+   <a href="#" onclick="toggle3()">Fechar</a>
+</div>
+        
+        </section>
+
+        <script src="Script.js" defer></script>
+   </body>
+</html>
